@@ -16,12 +16,18 @@ const Projects = ({ t, lang, scrollRef, scrollContainer }) => {
 					<div className="flex gap-2 ml-4">
 						<button
 							onClick={() => scrollContainer(scrollRef, 'left')}
+							aria-label="Scroll left"
 							className="p-2 rounded-full border border-[#ADB5BD]/20 text-[#495057] bg-transparent hover:bg-black/5 dark:text-[#ADB5BD] dark:border-white/10 dark:hover:bg-white/5 focus:outline-none focus:ring-0"
-						>◀</button>
+						>
+							<ChevronLeft size={16} />
+						</button>
 						<button
 							onClick={() => scrollContainer(scrollRef, 'right')}
+							aria-label="Scroll right"
 							className="p-2 rounded-full border border-[#ADB5BD]/20 text-[#495057] bg-transparent hover:bg-black/5 dark:text-[#ADB5BD] dark:border-white/10 dark:hover:bg-white/5 focus:outline-none focus:ring-0"
-						>▶</button>
+						>
+							<ChevronRight size={16} />
+						</button>
 					</div>
 				</div>
 
