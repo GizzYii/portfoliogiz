@@ -31,7 +31,7 @@ const Skills = ({ t }) => {
 						))}
 					</div>
 				</div>
-				<div className="p-8 rounded-2xl bg-[#212529] text-white dark:bg-white/5 border dark:border-white/10 flex flex-col justify-center">
+				<div className="p-8 rounded-2xl border card flex flex-col justify-center">
 					<h3 className="text-xl font-bold mb-4 flex items-center gap-2"><Sparkles className="text-[#ADB5BD]" /> {t.skills.journeyTitle}</h3>
 					<p className="text-sm opacity-80 leading-relaxed mb-4">{t.skills.journeyDesc}</p>
 					<div className="space-y-3">

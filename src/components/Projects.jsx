@@ -30,7 +30,7 @@ const Projects = ({ t, lang, scrollRef, scrollContainer }) => {
 						const Icons = { Sparkles, Layers, Gamepad2, CheckSquare, Layout };
 						const IconComp = Icons[p.icon];
 						return (
-							<div key={p.id} className="snap-start flex-shrink-0 w-[300px] md:w-[380px] p-8 rounded-2xl border bg-white dark:bg-[#1A1A1A] dark:border-white/5 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+							<div key={p.id} className="snap-start flex-shrink-0 w-[300px] md:w-[380px] p-8 rounded-2xl border card hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
 								<div className="flex justify-between mb-4 text-[#ADB5BD]">
 									{IconComp ? <IconComp size={24} /> : <Code2 size={24} />}
 									<a href={p.github} target="_blank" rel="noopener noreferrer" className="p-2 border rounded-lg bg-transparent border-[#ADB5BD]/10 text-[#495057] hover:bg-[#ADB5BD]/10 dark:text-[#ADB5BD] dark:border-white/10 dark:hover:bg-white/5">

@@ -7,6 +7,25 @@
   --bg-light: #F8F9FA;
 }
 
+/* Card theming variables */
+:root {
+  --card-bg: #ffffff;
+  --card-text: #212529;
+  --card-border: rgba(13, 110, 253, 0.04);
+}
+.dark {
+  --card-bg: #1A1A1A;
+  --card-text: #E0E0E0;
+  --card-border: rgba(255,255,255,0.06);
+}
+
+/* Reusable card helper to ensure consistent colors across browsers */
+.card {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  border-color: var(--card-border);
+}
+
 /* Small custom overrides to complement Tailwind classes used in components */
 body {
   @apply bg-[var(--bg-light)] text-[#212529] min-h-screen;

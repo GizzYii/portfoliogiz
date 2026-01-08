@@ -14,7 +14,7 @@ const Education = ({ t, lang }) => {
 				</div>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 					{education.map(edu => (
-						<div key={edu.id} className="p-6 rounded-xl border bg-white dark:bg-[#1A1A1A] dark:border-white/5 hover:-translate-y-1 transition-transform">
+						<div key={edu.id} className="p-6 rounded-xl border card hover:-translate-y-1 transition-transform">
 							<div className="flex items-center gap-2 text-[#ADB5BD] mb-2">
 								<GraduationCap size={16} />
 								<span className="text-[10px] font-bold uppercase">{edu.date}</span>

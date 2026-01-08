@@ -27,7 +27,7 @@ const Experience = ({ t, lang, expRef, scrollContainer }) => {
 
 				<div ref={expRef} className="flex gap-6 overflow-x-auto pb-10 no-scrollbar snap-x snap-mandatory">
 					{experiences.map(exp => (
-						<div key={exp.id} className="snap-start flex-shrink-0 w-[300px] md:w-[420px] p-8 rounded-2xl border bg-white dark:bg-[#1A1A1A] dark:border-white/5 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+						<div key={exp.id} className="snap-start flex-shrink-0 w-[300px] md:w-[420px] p-8 rounded-2xl border card hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
 							<div className="flex items-start justify-between mb-6">
 								<div className="p-3 rounded-xl bg-[#ADB5BD]/10 text-[#ADB5BD]">
 										{(() => {
