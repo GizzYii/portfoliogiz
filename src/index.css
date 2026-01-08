@@ -22,7 +22,7 @@ body {
 
 /* Reduce vertical spacing between main sections (tweak as needed) */
 main > * {
-  margin-block: 1.5rem; /* ~24px top/bottom */
-  scroll-margin-top: 4rem; /* keep anchor scroll offset consistent */
+  margin-block: 1rem; /* ~16px top/bottom */
+  scroll-margin-top: 3rem; /* keep anchor scroll offset consistent */
 }
 
