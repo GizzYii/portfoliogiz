@@ -16,6 +16,13 @@ const Hero = ({ t, isDark, scrollTo }) => {
 						<button onClick={() => scrollTo('projects')} className="px-8 py-3 rounded-lg font-medium bg-[#212529] text-white dark:bg-white dark:text-black flex items-center gap-2">
 							{t.hero.cta} <ChevronRight size={18} />
 						</button>
+						{/* CV buttons: TR & EN - open in new tab, accent color fits general design */}
+						<a href="/cv-tr.pdf" target="_blank" rel="noopener noreferrer" className="px-5 py-3 rounded-lg font-medium bg-[#0b74ff] text-white hover:bg-[#095fcc] dark:bg-white dark:text-black border dark:border-white/10 flex items-center">
+							{t.hero.cv_tr}
+						</a>
+						<a href="/cv-en.pdf" target="_blank" rel="noopener noreferrer" className="px-5 py-3 rounded-lg font-medium bg-[#0b74ff] text-white hover:bg-[#095fcc] dark:bg-white dark:text-black border dark:border-white/10 flex items-center">
+							{t.hero.cv_en}
+						</a>
 						<div className="flex gap-2">
 							<a href="https://github.com/GizzYii" target="_blank" rel="noopener noreferrer" className="p-3 border rounded-lg hover:bg-black/5 dark:border-white/10 dark:hover:bg-white/5 text-[#495057] dark:text-[#ADB5BD]">
 								<Github size={20} />

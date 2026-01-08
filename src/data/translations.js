@@ -7,7 +7,9 @@ const translations = {
 			lastName: 'Yıldız Allıkan',
 			title: 'BEGINNER FRONTEND DEVELOPER | Bilgisayar Programcılığı Öğrencisi',
 			desc: 'Web ve frontend geliştirme alanında kendini geliştiren bir geliştirici adayıyım. Arayüzlerin nasıl çalıştığı kadar, kullanılan yapının ve mimarinin neden o şekilde kurgulandığını anlamaya odaklanıyorum. Şu an frontend tarafında derinleşirken, ilerleyen süreçte full-stack geliştirme yolunda kendimi konumlandırmayı hedefliyorum.',
-			cta: 'Projelerimi Gör'
+			cta: 'Projelerimi Gör',
+			cv_tr: 'CV (TR)',
+			cv_en: 'CV (EN)'
 		},
 		projects: { title: 'Seçili Projeler', learning: 'Öğrenim Çıktısı' },
 		experience: { title: 'Deneyim', present: 'Halen' },
@@ -32,7 +34,9 @@ const translations = {
 			lastName: 'Yildiz Allikan',
 			title: 'BEGINNER FRONTEND DEVELOPER | Computer Programming Student',
 			desc: 'I am an aspiring developer specializing in web and frontend development. I focus on understanding not just how interfaces work, but why structures are built the way they are.',
-			cta: 'View My Work'
+			cta: 'View My Work',
+			cv_tr: 'CV (TR)',
+			cv_en: 'CV (EN)'
 		},
 		projects: { title: 'Selected Projects', learning: 'Key Learning' },
 		experience: { title: 'Experience', present: 'Present' },
