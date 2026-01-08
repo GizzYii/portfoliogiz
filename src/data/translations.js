@@ -30,7 +30,7 @@ const translations = {
 			badge: 'FRONTEND & REACT & WEB DEVELOPMENT',
 			firstName: 'Gizem',
 			lastName: 'Yildiz Allikan',
-			title: 'Beginner Frontend Developer | Computer Programming Student',
+			title: 'BEGINNER FRONTEND DEVELOPER | Computer Programming Student',
 			desc: 'I am an aspiring developer specializing in web and frontend development. I focus on understanding not just how interfaces work, but why structures are built the way they are.',
 			cta: 'View My Work'
 		},
