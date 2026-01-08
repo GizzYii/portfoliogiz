@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, ChevronRight, Star } from 'lucide-react';
-import profile from '../assets/pp.jpeg';
+import profile from '../assets/profilphoto.jpeg';
 
 const Hero = ({ t, isDark, scrollTo }) => {
 	const [cvOpen, setCvOpen] = useState(false);
