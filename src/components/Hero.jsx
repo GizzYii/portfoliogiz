@@ -29,15 +29,15 @@ const Hero = ({ t, isDark, scrollTo }) => {
 							{cvOpen && (
 								<div className="mt-2 flex flex-col gap-2 absolute left-0 w-max z-10">
 									<a
-										href="/cv/cv-tr.pdf"
-										onClick={(e) => { e.preventDefault(); window.open('/cv/cv-tr.pdf', '_blank', 'noopener'); }}
+										href={`${import.meta.env.BASE_URL}cv/cv-tr.pdf`}
+										onClick={(e) => { e.preventDefault(); window.open(`${import.meta.env.BASE_URL}cv/cv-tr.pdf`, '_blank', 'noopener'); }}
 										className="px-4 py-2 text-sm rounded-md font-medium bg-black/5 text-[#495057] hover:bg-black/10 dark:bg-white/5 dark:text-[#ADB5BD] dark:hover:bg-white/10 border border-[#ADB5BD]/10 dark:border-white/10"
 									>
 										{t.hero.cv_tr}
 									</a>
 									<a
-										href="/cv/cv-en.pdf"
-										onClick={(e) => { e.preventDefault(); window.open('/cv/cv-en.pdf', '_blank', 'noopener'); }}
+										href={`${import.meta.env.BASE_URL}cv/cv-en.pdf`}
+										onClick={(e) => { e.preventDefault(); window.open(`${import.meta.env.BASE_URL}cv/cv-en.pdf`, '_blank', 'noopener'); }}
 										className="px-4 py-2 text-sm rounded-md font-medium bg-black/5 text-[#495057] hover:bg-black/10 dark:bg-white/5 dark:text-[#ADB5BD] dark:hover:bg-white/10 border border-[#ADB5BD]/10 dark:border-white/10"
 									>
 										{t.hero.cv_en}
