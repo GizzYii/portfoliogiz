@@ -20,3 +20,9 @@ body {
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
+/* Reduce vertical spacing between main sections (tweak as needed) */
+main > * {
+  margin-block: 1.5rem; /* ~24px top/bottom */
+  scroll-margin-top: 4rem; /* keep anchor scroll offset consistent */
+}
+
