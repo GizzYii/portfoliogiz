@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Code2, Sparkles, Layers, Gamepad2, CheckSquare, Layout } from 'lucide-react';
+import { Github, Code2, Sparkles, Layers, Gamepad2, CheckSquare, Layout, ChevronLeft, ChevronRight } from 'lucide-react';
 import { getProjects } from '../data/projects';
 
 const Projects = ({ t, lang, scrollRef, scrollContainer }) => {

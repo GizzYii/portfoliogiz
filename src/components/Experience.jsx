@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, Building2, Hotel, Palmtree } from 'lucide-react';
+import { Users, Building2, Hotel, Palmtree, ChevronLeft, ChevronRight } from 'lucide-react';
 import { getExperiences } from '../data/experience';
 
 const Experience = ({ t, lang, expRef, scrollContainer }) => {
