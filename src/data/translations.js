@@ -5,7 +5,7 @@ const translations = {
 			badge: 'FRONTEND & REACT & WEB DEVELOPMENT',
 			firstName: 'Gizem',
 			lastName: 'Yıldız Allıkan',
-			title: 'Beginner Frontend Developer | Bilgisayar Programcılığı Öğrencisi',
+			title: 'BEGINNER FRONTEND DEVELOPER | Bilgisayar Programcılığı Öğrencisi',
 			desc: 'Web ve frontend geliştirme alanında kendini geliştiren bir geliştirici adayıyım. Arayüzlerin nasıl çalıştığı kadar, kullanılan yapının ve mimarinin neden o şekilde kurgulandığını anlamaya odaklanıyorum. Şu an frontend tarafında derinleşirken, ilerleyen süreçte full-stack geliştirme yolunda kendimi konumlandırmayı hedefliyorum.',
 			cta: 'Projelerimi Gör'
 		},
