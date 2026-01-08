@@ -4,6 +4,7 @@ import { Github, Linkedin, ChevronRight, Star } from 'lucide-react';
 import profile from '../assets/pp.jpeg';
 
 const Hero = ({ t, isDark, scrollTo }) => {
+	const [cvOpen, setCvOpen] = useState(false);
 	return (
 		<section id="home" className="pt-40 pb-20 px-6">
 			<div className="max-w-5xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
@@ -16,31 +17,7 @@ const Hero = ({ t, isDark, scrollTo }) => {
 						<button onClick={() => scrollTo('projects')} className="px-8 py-3 rounded-lg font-medium bg-[#212529] text-white dark:bg-white dark:text-black flex items-center gap-2">
 							{t.hero.cta} <ChevronRight size={18} />
 						</button>
-						{/* Single CV accordion (toggle to reveal TR / EN links) */}
-						{(() => {
-							const [cvOpen, setCvOpen] = useState(false);
-							return (
-								<div className="relative">
-									<button
-										aria-expanded={cvOpen}
-										onClick={() => setCvOpen(!cvOpen)}
-										className="px-4 py-2 text-sm rounded-md font-medium bg-black/5 text-[#495057] hover:bg-black/10 dark:bg-white/5 dark:text-[#ADB5BD] dark:hover:bg-white/10 border border-[#ADB5BD]/10 dark:border-white/10"
-									>
-										CV
-									</button>
-									{cvOpen && (
-										<div className="mt-2 flex flex-col gap-2 absolute left-0 w-max z-10">
-											<a href="/cv-tr.pdf" target="_blank" rel="noopener noreferrer" className="px-4 py-2 text-sm rounded-md font-medium bg-black/5 text-[#495057] hover:bg-black/10 dark:bg-white/5 dark:text-[#ADB5BD] dark:hover:bg-white/10 border border-[#ADB5BD]/10 dark:border-white/10">
-												{t.hero.cv_tr}
-											</a>
-											<a href="/cv-en.pdf" target="_blank" rel="noopener noreferrer" className="px-4 py-2 text-sm rounded-md font-medium bg-black/5 text-[#495057] hover:bg-black/10 dark:bg-white/5 dark:text-[#ADB5BD] dark:hover:bg-white/10 border border-[#ADB5BD]/10 dark:border-white/10">
-												{t.hero.cv_en}
-											</a>
-										</div>
-									)}
-								</div>
-							);
-						})()}
+						{/* CV accordion moved under profile photo */}
 						<div className="flex gap-2">
 							<a href="https://github.com/GizzYii" target="_blank" rel="noopener noreferrer" className="p-3 border rounded-lg hover:bg-black/5 dark:border-white/10 dark:hover:bg-white/5 text-[#495057] dark:text-[#ADB5BD]">
 								<Github size={20} />
@@ -53,6 +30,28 @@ const Hero = ({ t, isDark, scrollTo }) => {
 				</motion.div>
 				<div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-white dark:border-white/10 shadow-2xl overflow-hidden">
 					<img src={profile} alt="Profile" className="w-full h-full object-cover object-center transform scale-110" />
+				</div>
+				{/* CV accordion placed under profile photo */}
+				<div className="mt-4 w-full flex justify-center md:justify-center">
+					<div className="relative">
+						<button
+							aria-expanded={cvOpen}
+							onClick={() => setCvOpen(!cvOpen)}
+							className="px-4 py-2 text-sm rounded-md font-medium bg-black/5 text-[#495057] hover:bg-black/10 dark:bg-white/5 dark:text-[#ADB5BD] dark:hover:bg-white/10 border border-[#ADB5BD]/10 dark:border-white/10"
+						>
+							CV
+						</button>
+						{cvOpen && (
+							<div className="mt-2 flex flex-col gap-2 absolute left-1/2 -translate-x-1/2 w-max z-10">
+								<a href="/cv-tr.pdf" target="_blank" rel="noopener noreferrer" className="px-4 py-2 text-sm rounded-md font-medium bg-black/5 text-[#495057] hover:bg-black/10 dark:bg-white/5 dark:text-[#ADB5BD] dark:hover:bg-white/10 border border-[#ADB5BD]/10 dark:border-white/10">
+									{t.hero.cv_tr}
+								</a>
+								<a href="/cv-en.pdf" target="_blank" rel="noopener noreferrer" className="px-4 py-2 text-sm rounded-md font-medium bg-black/5 text-[#495057] hover:bg-black/10 dark:bg-white/5 dark:text-[#ADB5BD] dark:hover:bg-white/10 border border-[#ADB5BD]/10 dark:border-white/10">
+									{t.hero.cv_en}
+								</a>
+							</div>
+						)}
+					</div>
 				</div>
 			</div>
 		</section>
